@@ -1,3 +1,162 @@
 /* styles.css */
+.nav-box {
+  width: 960px;
+  height: 60px;
+  text-align: center;
+  position: relative;
+  background: #0075e2;
+}
+
+.center {
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 60px;
+}
+
+.nav-bar {
+  position: absolute;
+  right: 21px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-bar > div {
+  width: 82px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #0075e2;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.main {
+  padding-top: 24px;
+  padding-left: 24px;
+  display: flex;
+  align-items: stretch;
+}
+
+.left {
+  width: 300px;
+  height: 466px;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+}
+
+.right {
+  padding-left: 30px;
+  padding-top: 13px;
+  padding-right: 73px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #333333;
+  line-height: 30px;
+}
+
+.title img {
+  width: 60px;
+  height: 60px;
+  margin-right: 14px;
+}
+
+.sub-title {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #1473e6;
+  line-height: 30px;
+}
+
+.des {
+  margin-top: 16px;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #666666;
+  line-height: 28px;
+}
+
+.types {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.type {
+  width: 120px;
+  height: 40px;
+  border: 2px solid #666666;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #666666;
+}
+
+.type.active {
+  color: #1473e6;
+  border: 2px solid #1473e6;
+}
+
+.type:first-of-type {
+  margin-right: 21px;
+}
+
+.type-des {
+  margin-left: 11px;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #1473e6;
+}
+
+.price {
+  font-size: 18px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #d20000;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 44px;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  background: #1473e6;
+  box-shadow: 0px 4px 10px 0px rgba(39, 42, 128, 0.2);
+  border-radius: 3px;
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 60px;
+  text-align: center;
+}
 
 /* Add styles here to customize the appearance of your app */
+.left img {
+  width: 300px;
+  height: 100%;
+}
