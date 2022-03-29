@@ -1,13 +1,12 @@
 // Modules to control application life and create native browser window
 const { app, BrowserWindow, shell, ipcMain } = require('electron')
 const path = require('path')
-const StaticServer = require('./server')
-new StaticServer().start()
+
 function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 960,
-    height: 590,
+    height: 610,
     useContentSize: true,
     resizable: false,
     maximizable: false,
@@ -23,8 +22,10 @@ function createWindow() {
     mainWindow = null
   })
   // and load the index.html of the app.
-  mainWindow.loadURL('http://127.0.0.1:3600/index.html')
-  // mainWindow.loadFile('./src/index.html')
+  // const StaticServer = require('./server')
+  // new StaticServer().start()
+  // mainWindow.loadURL('http://127.0.0.1:3600/index.html')
+  mainWindow.loadFile('./src/index.html')
   ipcMain.on('resize', (event, { width, height }) => {
     mainWindow.setContentSize(width, height)
   });

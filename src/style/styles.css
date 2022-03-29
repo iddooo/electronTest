@@ -1,4 +1,13 @@
 /* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
 .nav-box {
   width: 960px;
   height: 60px;
@@ -24,7 +33,7 @@
   justify-content: flex-end;
 }
 
-.nav-bar > div {
+.nav-bar>div {
   width: 82px;
   height: 30px;
   background: #ffffff;
@@ -43,7 +52,8 @@
   padding-top: 24px;
   padding-left: 24px;
   display: flex;
-  align-items: stretch;
+  box-sizing: border-box;
+  width: 960px;
 }
 
 .left {
@@ -52,7 +62,7 @@
 }
 
 .left img {
-  width: 100%;
+  width: 300px;
   height: 100%;
 }
 
@@ -100,23 +110,25 @@
   display: flex;
   align-items: center;
   margin-top: 28px;
+  cursor: pointer;
 }
 
 .type {
   width: 120px;
   height: 40px;
-  border: 2px solid #666666;
   line-height: 40px;
   text-align: center;
   font-size: 16px;
   font-family: Microsoft YaHei;
   font-weight: bold;
   color: #666666;
+  position: relative;
+  background-image: url('../images/box.png');
+  background-size: 100% 100%;
 }
 
 .type.active {
-  color: #1473e6;
-  border: 2px solid #1473e6;
+  background-image: url('../images/active-box.png');
 }
 
 .type:first-of-type {
@@ -153,10 +165,7 @@
   color: #ffffff;
   line-height: 60px;
   text-align: center;
+  cursor: pointer;
 }
 
 /* Add styles here to customize the appearance of your app */
-.left img {
-  width: 300px;
-  height: 100%;
-}

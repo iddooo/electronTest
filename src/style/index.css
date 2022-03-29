@@ -10,4 +10,46 @@ body {
 .layout {
   width: 960px;
   height: 590px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.layout h1 {
+  width: 441px;
+  height: 28px;
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #040404;
+  line-height: 30px;
+  margin-bottom: 21px;
+}
+
+.info {
+  width: 419px;
+  height: 18px;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #666666;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.bg {
+  width: 912px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.jump {
+  width: 340px;
+  height: 70px;
+  background: #0075E2;
+  border-radius: 35px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+  margin: 51px auto 0;
+  cursor: pointer;
 }

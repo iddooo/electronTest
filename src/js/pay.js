@@ -1,2 +1,2 @@
 const { ipcRenderer } = require('electron')
-alert(ipcRenderer)
+console.log(ipcRenderer)

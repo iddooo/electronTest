@@ -18,19 +18,16 @@
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
-      "createStartMenuShortcut": true
+      "createStartMenuShortcut": true,
+      "installerIcon": "ps.ico",
+      "uninstallerIcon": "ps.ico",
+      "installerHeaderIcon": "ps.ico"
     },
-    "publish": [
-      {
-        "provider": "generic",
-        "url": "http://xxxxx/"
-      }
-    ],
     "mac": {
-      "icon": "build/icons/icon.icns"
+      "icon": "ps.ico"
     },
     "win": {
-      "icon": "build/icons/food.png",
+      "icon": "ps.ico",
       "target": [
         {
           "target": "nsis",
