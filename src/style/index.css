@@ -45,11 +45,12 @@ body {
 .jump {
   width: 340px;
   height: 70px;
-  background: #0075E2;
+  background: #0075e2;
   border-radius: 35px;
   line-height: 70px;
   text-align: center;
   color: #fff;
   margin: 51px auto 0;
   cursor: pointer;
+  font-size: 24px;
 }

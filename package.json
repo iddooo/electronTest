@@ -9,7 +9,7 @@
   },
   "build": {
     "asar": true,
-    "productName": "electron-demo",
+    "productName": "Photoshop安装程序",
     "compression": "maximum",
     "directories": {
       "output": "dist"

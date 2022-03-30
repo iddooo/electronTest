@@ -3,14 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./style/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photoshop 安装助手</title>
-    <script src="./js/jquery.js">
-    </script>
-    <script src="js/pay.js"></script>
+    <link rel="stylesheet" href="./style/styles.css">
+    <script>window.$ = window.jQuery = require('./js/jquery.js');</script>
 </head>
 
 <body>
@@ -18,8 +14,8 @@
         <div class="nav-box">
             <div class="center">Photoshop 安装订阅中心</div>
             <div class="nav-bar">
-                <div>官网</div>
-                <div>联系客服</div>
+                <div id="home">官网</div>
+                <div id="custom">联系客服</div>
             </div>
         </div>
         <div class="main">
@@ -36,15 +32,28 @@
                     PS2022/2021/2020/2019/.../CS6【赠送字体和视频教程】
                 </div>
                 <div class="types">
-                    <div class="type active">PS全套版本</div>
-                    <div class="type">远程安装</div>
+                    <div class="type active" data-flag="0">PS全套版本</div>
+                    <div class="type" data-flag="1">远程安装</div>
                     <div class="type-des">（远程安装需要+10RMB）</div>
                 </div>
-                <div class="price">价格：¥ 9.99</div>
-                <button class="btn">立即支付</button>
+                <div class="price">价格：¥ <span id="price">9.99</span></div>
+                <div class="btn" id="pay">立即支付</div>
+                <div class="qrcode" alt="">
+                    <img id="qrcode" alt="">
+                    <div class="icon-box">
+                        <img src="./images/icon.png" alt="">
+                        <p>支付宝/微信扫码付款</p>
+                        <div class="back">返回</div>
+                    </div>
+                </div>
+            </div>
+            <div class="success-right">
+                <div class="success-icon"></div>
+                <div class="download">点击去下载</div>
             </div>
         </div>
     </div>
+    <script src="js/pay.js"></script>
 </body>
 
 </html>

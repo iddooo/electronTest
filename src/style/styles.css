@@ -33,7 +33,7 @@ body {
   justify-content: flex-end;
 }
 
-.nav-bar>div {
+.nav-bar > div {
   width: 82px;
   height: 30px;
   background: #ffffff;
@@ -123,12 +123,12 @@ body {
   font-weight: bold;
   color: #666666;
   position: relative;
-  background-image: url('../images/box.png');
+  background-image: url("../images/box.png");
   background-size: 100% 100%;
 }
 
 .type.active {
-  background-image: url('../images/active-box.png');
+  background-image: url("../images/active-box.png");
 }
 
 .type:first-of-type {
@@ -167,5 +167,99 @@ body {
   text-align: center;
   cursor: pointer;
 }
-
+.qrcode {
+  display: none;
+}
+.isPay.container .btn {
+  display: none;
+}
+.isPay.container .price {
+  margin-bottom: 19px;
+}
+.isPay.container .qrcode {
+  height: 160px;
+  width: 581px;
+  display: block;
+}
+.isPay.container .qrcode img {
+  height: 160px;
+  width: 160px;
+  float: left;
+  margin-right: 29px;
+}
+.isPay.container .qrcode .icon-box {
+  height: 160px;
+  width: 390px;
+  float: left;
+  position: relative;
+}
+.isPay.container .qrcode .icon-box img {
+  width: 130px;
+  height: 60px;
+  margin-bottom: 17px;
+}
+.isPay.container .qrcode .icon-box p {
+  width: 137px;
+  height: 15px;
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #666666;
+  line-height: 28px;
+}
 /* Add styles here to customize the appearance of your app */
+.isPay.container .qrcode .icon-box .back {
+  width: 200px;
+  height: 60px;
+  background: #1473e6;
+  box-shadow: 0 4px 10px 0 rgba(39, 42, 128, 0.2);
+  border-radius: 3px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ffffff;
+  position: absolute;
+  right: 6px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.container.success .right {
+  display: none;
+}
+.success-right {
+  display: none;
+}
+.container.success .success-right {
+  display: block;
+  width: 636px;
+  height: 467px;
+  position: relative;
+}
+.container.success .success-right .download {
+  width: 340px;
+  height: 72px;
+  background: #0075e2;
+  box-shadow: 0 4px 10px 0 rgba(39, 42, 128, 0.2);
+  border-radius: 36px;
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 72px;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 130px;
+  cursor: pointer;
+}
+.success-icon {
+  left: 251px;
+  top: 104px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url(../images/success.png) no-repeat center;
+  background-size: 100px 100px;
+}
